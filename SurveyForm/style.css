@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body {
+  background: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(113, 113, 189, 0.8)
+    ),
+    url("https://images.pexels.com/photos/5439436/pexels-photo-5439436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  line-height: 1.5;
+}
+
+header h1 {
+  padding-top: 50px;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: white;
+  font-style: italic;
+}
+
+main {
+  width: 50%;
+  margin: 50px auto 0 auto;
+
+  border: 1px solid rgb(27, 27, 50);
+  background: rgba(27, 27, 50, 0.8);
+  font-size: 18px;
+}
+
+form {
+  margin: 50px 50px;
+}
+
+label,
+#form-control,
+#bio {
+  display: block;
+  padding: 10px 0;
+  line-height: 2.1rem;
+}
+
+input,
+#dropdown,
+#bio {
+  width: 100%;
+  height: 2.3rem;
+  min-height: 1em;
+  border: 1px solid rgba(27, 27, 50, 0.8);
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #495057;
+  font-size: inherit;
+}
+
+ {
+  line-height: 2.1rem;
+  padding: 10px 0;
+}
+
+option {
+  color: #495057;
+}
+
+.r1,
+.improve {
+  width: unset;
+  margin: 0 0.6em 0 0;
+  vertical-align: middle;
+}
+
+#recommendation label,
+#improvement label {
+  padding: unset;
+  line-height: 30px;
+}
+
+#recommendation p,
+#improvement p {
+  padding: 20px 0 10px 0;
+}
+
+#recommendation input[type="radio"],
+#improvement input[type="checkbox"] {
+  width: 2.9%;
+  height: 2em;
+}
+
+#bio {
+  height: unset;
+  line-height: unset;
+  margin: 10px 0 20px 0;
+}
+
+.bio {
+  margin-top: 1rem;
+}
+
+#submit {
+  background: hwb(46deg 35% 24% / 80%);
+  /* width: 102%; */
+
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Survey-Form</title>
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <header>
+          <h1 id="title">Survey Form</h1>
+          <p id="description">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </header>
+      </div>
+
+      <main>
+        <form id="survey-form">
+          <div class="group-member">
+            <label for="name" id="name-label"
+              >Name
+              <input id="name" placeholder="Enter your Name" required />
+            </label>
+          </div>
+          <div class="group-member">
+            <label for="email" id="email-label"
+              >Email
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </label>
+          </div>
+          <div class="group-member">
+            <label for="age" id="number-label"
+              >Age (optional)
+              <input
+                id="number"
+                type="number"
+                placeholder="Enter your age"
+                min="18"
+                max="55"
+              />
+            </label>
+          </div>
+          <div class="group-member">
+            <label for="number"
+              >Contact Number (optional)
+              <input
+                id="contact-number"
+                type="tele"
+                placeholder="Enter your phone Number"
+                required
+              />
+            </label>
+          </div>
+          <div class="group-member" id="form-control">
+            <p>Which best option describes your current role?</p>
+            <select id="dropdown">
+              <option disabled selected value class="option">
+                Select current role
+              </option>
+              <option value="student">Student</option>
+              <option value="job">Full time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="group-member" id="recommendation">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="definitely">
+              <input
+                type="radio"
+                value="8"
+                name="recommend"
+                class="r1"
+              />Definitely
+            </label>
+            <label for="maybe">
+              <input type="radio" value="8" name="recommend" class="r1" />Maybe
+            </label>
+            <label for="notSure">
+              <input type="radio" value="8" name="recommend" class="r1" />Not
+              Sure
+            </label>
+          </div>
+          <div class="group-member" id="improvement">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="front-end-Projects">
+              <input type="checkbox" value="9" class="improve" />Front-end
+              Projects
+            </label>
+            <label for="back-end-Projects">
+              <input type="checkbox" value="9" class="improve" />Back-end
+              Projects
+            </label>
+            <label for="data-Visualization">
+              <input type="checkbox" value="9" class="improve" />Data
+              Visualization
+            </label>
+            <label for="challenges">
+              <input type="checkbox" value="9" class="improve" />Challenges
+            </label>
+            <label for="community">
+              <input type="checkbox" value="9" class="improve" />Open Source
+              Community
+            </label>
+            <label for="gitter-help-rooms">
+              <input type="checkbox" value="9" class="improve" />Gitter help
+              rooms
+            </label>
+            <label for="videos">
+              <input type="checkbox" value="9" class="improve" />Videos
+            </label>
+            <label for="city-Meetups">
+              <input type="checkbox" value="9" class="improve" />City Meetups
+            </label>
+            <label for="wiki">
+              <input type="checkbox" value="9" class="improve" />Wiki
+            </label>
+            <label for="Forum">
+              <input type="checkbox" value="9" class="improve" />Forum
+            </label>
+            <label for="additional-Courses">
+              <input type="checkbox" value="9" class="improve" />Additional
+              Courses
+            </label>
+          </div>
+
+          <div class="bio">
+            Any comments or suggestions?
+            <textarea
+              id="bio"
+              rows="5"
+              placeholder="Enter your comments here......"
+            ></textarea>
+          </div>
+
+          <div class="submit">
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>
